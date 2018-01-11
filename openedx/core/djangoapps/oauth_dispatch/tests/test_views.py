@@ -5,6 +5,7 @@ Tests for Blocks Views
 import json
 
 import ddt
+from mock import patch
 from django.conf import settings
 from django.test import RequestFactory, TestCase
 from django.core.urlresolvers import reverse
