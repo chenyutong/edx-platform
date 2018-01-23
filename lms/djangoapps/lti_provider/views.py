@@ -298,4 +298,7 @@ def users_delete_user_account(request):
     except Exception:
         raise Http404
 
-    return HttpResponse("User deleted successfully")
+    data = {
+        'user_id': user_id
+    }
+    return HttpResponse(json.dumps(data), content_type='application/json')
